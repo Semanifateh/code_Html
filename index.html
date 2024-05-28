@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html >
+<head>
+   <style >
+      /* Style pour la liste déroulante */
+      .hidden {display: none;}
+  
+      .container {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          width: 100%; /* Utilisation de 100% de la largeur de l'écran */
+      }
+  
+      .text {
+          flex: 1; /* Les deux éléments prennent la même largeur */
+          margin: 20px; /* Suppression de toutes les marges */
+          padding: 0; /* Suppression de tous les paddings */
+          line-height: 2.5;
+      }
+  
+      /* Styles pour la table */
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-rvyq{border-color:inherit;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+      .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+  </style>
+  
+</head> 
+
+<body>
+    <header>
+        <img usemap="#paris" src="paris1.jpg" alt="Une image de Paris" style="width: 1100px; height: 260px;margin-left: 150px;margin-right: 30px;">
+        <map name="paris">  
+            <area href="paris.jpg" shape="rect" coords="0,0,1280,250" alt="Carte de Paris">
+        </map>
+    </header>
+    <br>
+    <br>
+    <h1>Les Jeux Olympiques de Paris 2024 : Un Événement Historique</h1>
+    <br>
+    <video width="640" height="360" controls>
+      <source src="paris24.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos au format HTML5.
+    </video>
+    
+  
+    <br>
+    <p style="font-size: 18px;">   Les Jeux Olympiques de Paris 2024 promettent d'être un événement historique qui captivera 
+        le monde entier. Depuis leur réintroduction en 1896, les Jeux Olympiques ont été le symbole
+         ultime de l'unité mondiale, célébrant l'excellence athlétique et la diversité culturelle.</p>
+        
+         <p style="font-size: 18px;"> Pour la troisième fois de leur histoire, Paris accueillera les Jeux Olympiques, rejoignant
+         ainsi une liste prestigieuse de villes ayant déjà eu cet honneur. Cette édition marquera 
+         également une première, avec l'intégration de nouveaux sports passionnants tels que 
+         <strong>le surf, l'escalade sportive et le skateboard</strong>, témoignant de l'évolution 
+         constante du programme olympique pour refléter les tendances contemporaines.</p>
+
+         <p style="font-size: 18px;"> Les Jeux Olympiques de Paris 2024 débuteront avec la cérémonie d'ouverture spectaculaire le 
+    <b>26 Juillet 2024</b> , marquant le début de deux semaines de compétition passionnante et de célébration 
+        de l'excellence athlétique mondiale. Pendant 17 jours, les athlètes venus des
+         quatre coins du monde convergeront vers Paris et d'autres sites en France pour rivaliser dans
+          une variété de sports emblématiques, allant de l'athlétisme et de la natation aux sports 
+          émergents tels que le surf et l'escalade sportive.</p>
+          
+    <div style="display: flex; align-items: center; margin-top: 20px;">
+        <!-- Première image avec liste déroulante -->
+        <div style="width: 20%; margin-right: 20px; text-align: center;">
+            <img src="sport.jpeg" alt="liste des sports" style="width: 100%;margin-left: 30px;margin-right: 20px;">
+           
+            <a class="clickable" onclick="toggleList()"><b>   ▼ Sport</b></a>
+            <ul id="sportList" class="hidden">
+                <li>Athlétisme</li>
+                <li>Natation</li>
+                <li>Basketball</li>
+                <li>Golf</li>
+                <li>Handball</li>
+                <li>Judo</li>   
+                <li>Rugby</li>
+                <li>Tennis</li>
+                <li>Gymnastique</li>
+                <li>Lutte</li>
+                           
+            </ul>
+        </div>
+        <!-- Deuxième image avec texte -->
+        <div style="width: 20%; margin-right: 20px; text-align: center;">
+            <img src="site.jpg" alt="les site" style="width: 350px; height: 250px;margin-left: 150px;margin-right: 200px;">
+            <a class="image site" style="margin-left: 300px;" href="https://olympics.com/fr/paris-2024/sites" target="_blank"><b>Site</b></a>
+
+
+        </div>
+        <!-- Troisième image avec texte -->
+        <div style="width: 20%; margin-right: 20px; text-align: center;">
+            <img src="spectacle.jpg" alt="information spectacle" style="width: 340px; height: 240px;margin-left: 380px;margin-right: 300px;">
+            <a class="Spectacle" style="margin-left: 500px;" href="https://olympics.com/fr/paris-2024/spectateurs/informations-pratiques-spectateurs" target="_blank"><b>Spectacle</b></a>
+
+        </div>
+    </div>
+        
+    
+           <br> 
+      <h2>Calendrier du premier jour de compétition:</h2>
+      <br> 
+
+
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-rvyq">Heure<br></th>
+            <th class="tg-rvyq">Sport</th>
+            <th class="tg-rvyq">Genre</th>
+            <th class="tg-rvyq">Match</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0pky">15h</td>
+            <td class="tg-0pky">Football</td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">Asie 2 - Espagne / Groupe C - Journée 1</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">15h30</td>
+            <td class="tg-0pky">Rugby à 7</td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">Poule A - Journée 1</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">16h</td>
+            <td class="tg-0pky">Rugby à 7</td>
+            <td class="tg-0pky">Femmes</td>
+            <td class="tg-0pky">Poule A - Journée 1</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">16h30</td>
+            <td class="tg-0pky">Football</td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">Barragiste - Nouvelle-Zélande / Groupe A</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">17h</td>
+            <td class="tg-0pky">Natation </td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">50m nage libre</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">17h</td>
+            <td class="tg-0pky">Football</td>
+            <td class="tg-0pky">Femmes</td>
+            <td class="tg-0pky">Barragiste - Nouvelle-Zélande / Groupe A</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">18h</td>
+            <td class="tg-0pky">Judo</td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">48 kg&nbsp;&nbsp;éliminatoire, 1/32 finale</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">19h</td>
+            <td class="tg-0pky">Natation </td>
+            <td class="tg-0pky">Hommes</td>
+            <td class="tg-0pky">100m papillon</td>
+          </tr>
+        </tbody>
+        </table>
+
+        <br> 
+        <p>Consultez le site pour le programme complet des Jeux Olympiques de Paris 2024. <a href="https://www.eurosport.fr/jeux-olympiques/paris-2024/2024/jeux-olympiques-de-paris-2024-dates-calendrier-horaires.-tout-ce-qu-il-faut-savoir-sur-le-programme-_sto9071593/story.shtml" target="_blank">cliquez ici</a>.</p>
+        <br> 
+       
+         
+         
+             
+         <div class="container">
+          <!-- Image de Michael Phelps -->
+          <div class="image">
+              <img src="michael-phelps.jpg" alt="Michael Phelps" style="width: 300px;">
+          </div>
+          <!-- Texte sur Michael Phelps -->
+          <div class="text">
+            <h2>Michael Phelps : Légende Olympique Inégalée</h2>
+              
+               <p> Michael Phelps est largement considéré comme l'un des plus grands athlètes olympiques 
+                  de tous les temps. Avec un total stupéfiant de 28 médailles olympiques, dont 23 en or, 
+                  Phelps a dominé les Jeux Olympiques de manière inégalée dans l'histoire de la natation. 
+                  Sa carrière olympique légendaire a commencé aux Jeux Olympiques de Sydney en 2000, où, à 
+                  seulement 15 ans, il est devenu le plus jeune homme à nager pour les États-Unis depuis 
+                  68 ans. Cependant, c'est aux Jeux Olympiques d'Athènes en 2004 que Phelps a commencé à 
+                  marquer l'histoire, remportant six médailles d'or, un exploit rarement égalé dans un seul
+                   événement. Aux Jeux de Pékin en 2008, il a établi un record stupéfiant en remportant 
+                   huit médailles d'or, surpassant le record de sept médailles d'or détenu par Mark Spitz 
+                   depuis 1972. Sa domination s'est poursuivie aux Jeux de Londres en 2012 et aux Jeux de
+                    Rio en 2016, où il a continué à accumuler les médailles d'or et à consolider sa
+                     réputation d'athlète légendaire. Phelps a inspiré des générations de nageurs et 
+                     d'athlètes du monde entier, démontrant une détermination, un dévouement et un talent
+                      exceptionnels qui resteront gravés dans l'histoire des Jeux Olympiques pour les
+                       années à venir.</p>
+                      
+          </div>
+      </div>
+      <p style="font-size: 18px;">
+    
+         Les festivités prendront fin avec la cérémonie de clôture le <b>11 Aout 2024</b>, où les athlètes
+         seront honorés pour leurs réalisations remarquables et où le flambeau olympique sera transmis 
+         à la prochaine ville hôte des Jeux Olympiques. Ces deux semaines d'excitation, d'inspiration 
+         et de camaraderie marqueront à jamais l'histoire des Jeux Olympiques de Paris 2024, laissant
+          un héritage durable et des souvenirs inoubliables pour tous ceux qui auront eu la chance d'y 
+          participer ou de les vivre en direct.</p>
+      
+
+    <script>
+        // Fonction pour afficher ou masquer la liste au clic sur le texte "Sport"
+        function toggleList() {
+            var list = document.getElementById("sportList");
+            if (list.classList.contains("hidden")) {
+                list.classList.remove("hidden");
+            } else {
+                list.classList.add("hidden");}
+            
+        }
+    </script>
+      
+      
+
+
+
+
+</body>
+</html>
